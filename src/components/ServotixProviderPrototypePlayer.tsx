@@ -9,6 +9,7 @@ import {
   CheckCircle2,
   AlertCircle
 } from 'lucide-react';
+import { getAssetPath } from '../utils/assets';
 
 interface StageMarker {
   time: number;
@@ -206,7 +207,7 @@ export function ServotixProviderPrototypePlayer() {
           <div className="relative w-full aspect-[1920/838] bg-black flex items-center justify-center">
             <video
               ref={videoRef}
-              src="/assets/provider-prototype.mp4"
+              src={getAssetPath('assets/provider-prototype.mp4')}
               autoPlay
               loop
               muted={isMuted}
@@ -219,8 +220,7 @@ export function ServotixProviderPrototypePlayer() {
               onClick={togglePlay}
               className="w-full h-full object-contain cursor-pointer select-none bg-black"
             >
-              <source src="/assets/provider-prototype.mp4" type="video/mp4" />
-              <source src="/src/assets/provider-prototype.mp4" type="video/mp4" />
+              <source src={getAssetPath('assets/provider-prototype.mp4')} type="video/mp4" />
             </video>
 
             {/* Fallback displayed ONLY if video fails to load */}

@@ -6,6 +6,7 @@ import {
   Eye
 } from 'lucide-react';
 import { CaseStudy } from '../types';
+import { getAssetPath } from '../utils/assets';
 import { ClinicalDashboardMockup, FintechMobileMockup, DesignSystemSpecMockup, UserFlowDiagram } from './UIArtifacts';
 import { ServotixServiceLogMockup } from './ServotixArtifacts';
 import { InvotixPaymentJourneyDiagram } from './InvotixArtifacts';
@@ -121,7 +122,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         return (
           <div className="w-full rounded-xl overflow-hidden border border-white/10 bg-[#0C0E14] shadow-2xl">
             <img
-              src="/assets/servotix-hero-cover.png"
+              src={getAssetPath('assets/servotix-hero-cover.png')}
               alt="Servotix — One place shared by residents and providers"
               className="w-full h-auto object-cover select-none"
               loading="lazy"
@@ -132,7 +133,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         return (
           <div className="w-full rounded-xl overflow-hidden border border-white/10 bg-[#0C0E14] shadow-2xl">
             <img
-              src="/assets/invotix-hero-cover.png"
+              src={getAssetPath('assets/invotix-hero-cover.png')}
               alt="Invotix Invoicing Platform Hero Showcase"
               className="w-full h-auto object-cover select-none"
               loading="lazy"
@@ -181,7 +182,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             {project.id === 'shared-record-local-services' ? (
               <div className="rounded-lg overflow-hidden">
                 <img 
-                  src="/assets/servotix-hero-cover.png" 
+                  src={getAssetPath('assets/servotix-hero-cover.png')} 
                   alt="Servotix Connected Experience" 
                   className="w-full h-auto object-cover" 
                 />
@@ -189,7 +190,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             ) : project.id === 'invotix' ? (
               <div className="rounded-lg overflow-hidden">
                 <img 
-                  src="/assets/invotix-hero-cover.png" 
+                  src={getAssetPath('assets/invotix-hero-cover.png')} 
                   alt="Invotix Invoicing Platform" 
                   className="w-full h-auto object-cover" 
                 />

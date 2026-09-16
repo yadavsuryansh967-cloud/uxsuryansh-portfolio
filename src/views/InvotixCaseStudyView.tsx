@@ -36,6 +36,7 @@ import {
 } from '../components/InvotixArtifacts';
 import { InvotixPrototypePlayer } from '../components/InvotixPrototypePlayer';
 import { InvotixWireframeCarousel } from '../components/InvotixWireframeCarousel';
+import { getAssetPath } from '../utils/assets';
 
 interface InvotixCaseStudyViewProps {
   onBackToWork: () => void;
@@ -222,7 +223,7 @@ export const InvotixCaseStudyView: React.FC<InvotixCaseStudyViewProps> = ({
           <div className="pt-2">
             <div className="rounded-2xl overflow-hidden border border-white/10 bg-[#0C0E14] shadow-2xl">
               <img
-                src="/assets/invotix-hero-cover.png"
+                src={getAssetPath('assets/invotix-hero-cover.png')}
                 alt="Invotix Product Hero — Home screen, invoice creation, and journey management interfaces"
                 className="w-full h-auto object-cover select-none"
                 loading="lazy"
@@ -352,7 +353,7 @@ export const InvotixCaseStudyView: React.FC<InvotixCaseStudyViewProps> = ({
               
               <div className="w-full max-w-4xl rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-[#0d1117] flex justify-center">
                 <img 
-                  src="/assets/invotix-invoice-journey.png" 
+                  src={getAssetPath('assets/invotix-invoice-journey.png')} 
                   alt="Invotix User Journey: Account Preferences → Invoices list → Invoice Details (Paid & Draft states)" 
                   className="w-full h-auto object-contain rounded-xl select-none"
                   referrerPolicy="no-referrer"
@@ -448,7 +449,7 @@ export const InvotixCaseStudyView: React.FC<InvotixCaseStudyViewProps> = ({
               
               <div className="w-full max-w-4xl rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-[#0d1117] flex justify-center">
                 <img 
-                  src="/assets/quick-invoice-journey.png" 
+                  src={getAssetPath('assets/quick-invoice-journey.png')} 
                   alt="Quick Invoice User Flow: Select Type → Quick Invoice Setup (Client & Item Selection) → Detailed Invoice Editor" 
                   className="w-full h-auto object-contain rounded-xl select-none"
                   referrerPolicy="no-referrer"
@@ -534,7 +535,7 @@ export const InvotixCaseStudyView: React.FC<InvotixCaseStudyViewProps> = ({
                 </div>
                 <div className="w-full rounded-2xl overflow-hidden border border-white/10 bg-[#595959] p-3 sm:p-4 flex justify-center">
                   <img 
-                    src="/assets/bulk-invoice-wireframe-explore.png" 
+                    src={getAssetPath('assets/bulk-invoice-wireframe-explore.png')} 
                     alt="Bulk Invoice 4-Step Exploration Wireframe (Select Template, Upload Sheet, Preview & Download, Send Invoice)" 
                     className="w-full h-auto object-contain select-none max-h-[420px]"
                     referrerPolicy="no-referrer"
@@ -554,7 +555,7 @@ export const InvotixCaseStudyView: React.FC<InvotixCaseStudyViewProps> = ({
                 </div>
                 <div className="w-full rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-[#0d1117] flex justify-center">
                   <img 
-                    src="/assets/bulk-invoice-final-flow.png" 
+                    src={getAssetPath('assets/bulk-invoice-final-flow.png')} 
                     alt="Bulk Invoice Final UI Flow: Select Type → Select Line Items → Fill/Upload Sheet with Template Download → Card & Tabular Dual Previews → Send Invoices" 
                     className="w-full h-auto object-contain rounded-xl select-none"
                     referrerPolicy="no-referrer"
@@ -631,7 +632,7 @@ export const InvotixCaseStudyView: React.FC<InvotixCaseStudyViewProps> = ({
               
               <div className="w-full max-w-4xl rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-[#ffffff] p-2 sm:p-4 flex justify-center">
                 <img 
-                  src="/assets/home-screen-evolution.png" 
+                  src={getAssetPath('assets/home-screen-evolution.png')} 
                   alt="Home Screen Evolution: Initial Wireframe (multiple entry points) vs Structured & Final UI (focused around Invoices, Reports & Settings)" 
                   className="w-full h-auto object-contain rounded-xl select-none"
                   referrerPolicy="no-referrer"
@@ -706,7 +707,7 @@ export const InvotixCaseStudyView: React.FC<InvotixCaseStudyViewProps> = ({
               
               <div className="w-full max-w-4xl rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-[#ffffff] p-2 sm:p-4 flex justify-center">
                 <img 
-                  src="/assets/template-settings-flow.png" 
+                  src={getAssetPath('assets/template-settings-flow.png')} 
                   alt="Customize Invoice Templates: Palette icon provides Red, Black, Green, Blue options; Typography icon provides Anton, Roboto, Inter options; Carousel navigation to explore templates and Save & Apply" 
                   className="w-full h-auto object-contain rounded-xl select-none"
                   referrerPolicy="no-referrer"

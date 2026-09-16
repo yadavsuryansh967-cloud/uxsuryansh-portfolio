@@ -18,6 +18,7 @@ import {
   HelpCircle,
   ExternalLink
 } from 'lucide-react';
+import { getAssetPath } from '../utils/assets';
 import { 
   ScatteredRecordsVisual,
   ShiftInThinkingVisual,
@@ -165,7 +166,7 @@ export const ServotixCaseStudyView: React.FC<ServotixCaseStudyViewProps> = ({
           <div className="pt-2">
             <div className="rounded-2xl overflow-hidden border border-white/10 bg-[#0C0E14] shadow-2xl">
               <img
-                src="/assets/servotix-hero-cover.png"
+                src={getAssetPath('assets/servotix-hero-cover.png')}
                 alt="Servotix Hero Showcase — One place. Shared by residents and providers"
                 className="w-full h-auto object-cover select-none"
                 loading="lazy"

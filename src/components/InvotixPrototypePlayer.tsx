@@ -14,6 +14,7 @@ import {
   ExternalLink,
   AlertCircle
 } from 'lucide-react';
+import { getAssetPath } from '../utils/assets';
 
 interface StageMarker {
   time: number;
@@ -271,7 +272,7 @@ export function InvotixPrototypePlayer() {
           <div className="relative w-full aspect-[16/9] sm:aspect-[16/9] md:aspect-[21/9] lg:aspect-[1920/880] bg-black flex items-center justify-center">
             <video
               ref={videoRef}
-              src="/assets/invotix-prototype.mp4"
+              src={getAssetPath('assets/invotix-prototype.mp4')}
               autoPlay
               loop
               muted={isMuted}
@@ -284,8 +285,7 @@ export function InvotixPrototypePlayer() {
               onClick={togglePlay}
               className="w-full h-full object-contain cursor-pointer select-none bg-black"
             >
-              <source src="/assets/invotix-prototype.mp4" type="video/mp4" />
-              <source src="/src/assets/invotix-prototype.mp4" type="video/mp4" />
+              <source src={getAssetPath('assets/invotix-prototype.mp4')} type="video/mp4" />
             </video>
 
             {/* Error Fallback */}

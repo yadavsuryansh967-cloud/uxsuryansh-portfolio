@@ -12,6 +12,7 @@ import {
   SlidersHorizontal,
   LayoutGrid
 } from 'lucide-react';
+import { getAssetPath } from '../utils/assets';
 
 interface CarouselSlide {
   id: string;
@@ -43,7 +44,7 @@ const CAROUSEL_SLIDES: CarouselSlide[] = [
       {
         label: 'Home Screen Evolution (Before vs After)',
         type: 'comparison',
-        imageSrc: '/assets/home-screen-evolution.png',
+        imageSrc: getAssetPath('assets/home-screen-evolution.png'),
         caption: 'Evolution comparison: The initial complex dashboard vs the finalized focused Invotix Home.'
       }
     ]
@@ -62,13 +63,13 @@ const CAROUSEL_SLIDES: CarouselSlide[] = [
       {
         label: 'Wireframe (8 Steps)',
         type: 'wireframe',
-        imageSrc: '/assets/quick-invoice-wireframes.png',
+        imageSrc: getAssetPath('assets/quick-invoice-wireframes.png'),
         caption: '8-step wireframe flow: Template, Customer, Info, Items, Summary, Payment, Reminder, Notes & Preview.'
       },
       {
         label: 'Final High-Fidelity Flow',
         type: 'final',
-        imageSrc: '/assets/quick-invoice-journey.png',
+        imageSrc: getAssetPath('assets/quick-invoice-journey.png'),
         caption: 'Final Quick Invoice journey: Streamlined 2-tap client selection and instant item attachment.'
       }
     ]
@@ -87,13 +88,13 @@ const CAROUSEL_SLIDES: CarouselSlide[] = [
       {
         label: 'Wireframe Explorations',
         type: 'wireframe',
-        imageSrc: '/assets/bulk-invoice-wireframe-explore.png',
+        imageSrc: getAssetPath('assets/bulk-invoice-wireframe-explore.png'),
         caption: 'Rough structure wireframe: Exploring client batching, item multipliers, and spreadsheet upload mechanics.'
       },
       {
         label: 'Final High-Fidelity Flow',
         type: 'final',
-        imageSrc: '/assets/bulk-invoice-final-flow.png',
+        imageSrc: getAssetPath('assets/bulk-invoice-final-flow.png'),
         caption: 'Final Bulk Invoice UI: Integrated spreadsheet data entry, batch validation, and multi-send.'
       }
     ]
@@ -112,7 +113,7 @@ const CAROUSEL_SLIDES: CarouselSlide[] = [
       {
         label: 'Invoice Journey & Tracking UI',
         type: 'final',
-        imageSrc: '/assets/invotix-invoice-journey.png',
+        imageSrc: getAssetPath('assets/invotix-invoice-journey.png'),
         caption: 'Final Invoice Journey: Real-time event tracking, reminder schedules, and payment verification.'
       }
     ]

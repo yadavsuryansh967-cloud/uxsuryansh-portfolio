@@ -28,6 +28,7 @@ import {
 } from 'lucide-react';
 import { ServotixResidentPrototypePlayer } from './ServotixResidentPrototypePlayer';
 import { ServotixProviderPrototypePlayer } from './ServotixProviderPrototypePlayer';
+import { getAssetPath } from '../utils/assets';
 
 export { ServotixResidentPrototypePlayer, ServotixProviderPrototypePlayer };
 
@@ -251,7 +252,7 @@ export function ServotixServiceLogMockup() {
         {activeTab === 'final' && (
           <div className="w-full max-w-[340px] sm:max-w-[380px] rounded-3xl overflow-hidden shadow-2xl border border-white/20 bg-black flex flex-col items-center">
             <img 
-              src="/assets/DS1IMAGE1.png" 
+              src={getAssetPath('assets/DS1IMAGE1.png')} 
               alt="Real Screenshot: Decision Story #1 — Final Service Log Tabular View"
               className="w-full h-auto object-contain rounded-2xl select-none"
               referrerPolicy="no-referrer"
@@ -262,7 +263,7 @@ export function ServotixServiceLogMockup() {
         {activeTab === 'overlay' && (
           <div className="w-full max-w-3xl rounded-2xl overflow-hidden shadow-2xl border border-white/20 bg-black flex flex-col items-center">
             <img 
-              src="/assets/decision-story-1-flow.png" 
+              src={getAssetPath('assets/decision-story-1-flow.png')} 
               alt="Decision Story #1: Step-by-Step Filter & AI Flow"
               className="w-full h-auto object-contain rounded-xl select-none"
               referrerPolicy="no-referrer"
@@ -273,7 +274,7 @@ export function ServotixServiceLogMockup() {
         {activeTab === 'wireframes' && (
           <div className="w-full max-w-4xl rounded-2xl overflow-hidden shadow-2xl border border-white/20 bg-[#0d1117] flex flex-col items-center">
             <img 
-              src="/assets/service-log-wireframes.png" 
+              src={getAssetPath('assets/service-log-wireframes.png')} 
               alt="Decision Story #1: Miro Wireframe Explorations"
               className="w-full h-auto object-contain rounded-xl select-none"
               referrerPolicy="no-referrer"
@@ -335,7 +336,7 @@ export function ServotixPaymentEvolution() {
           {selectedVersion === 'explorations' && (
             <div className="w-full max-w-lg rounded-2xl overflow-hidden shadow-2xl border border-white/20 bg-[#0d1117] flex flex-col items-center">
               <img 
-                src="/assets/decision-story-2-explorations.png" 
+                src={getAssetPath('assets/decision-story-2-explorations.png')} 
                 alt="Decision Story #2: First Attempts & Payment Explorations"
                 className="w-full h-auto object-contain rounded-xl select-none"
                 referrerPolicy="no-referrer"
@@ -346,7 +347,7 @@ export function ServotixPaymentEvolution() {
           {selectedVersion === 'final' && (
             <div className="w-full max-w-sm rounded-2xl overflow-hidden shadow-2xl border border-white/20 bg-[#0d1117] flex flex-col items-center">
               <img 
-                src="/assets/decision-story-2-final.png" 
+                src={getAssetPath('assets/decision-story-2-final.png')} 
                 alt="Decision Story #2: Final Chosen Direction"
                 className="w-full h-auto object-contain rounded-xl select-none"
                 referrerPolicy="no-referrer"
@@ -439,7 +440,7 @@ export function ServotixAddServiceEvolution() {
           <div className="flex justify-center items-center">
             <div className="w-full max-w-2xl rounded-2xl overflow-hidden shadow-2xl border border-white/20 bg-[#0d1117] flex flex-col items-center">
               <img 
-                src="/assets/decision-story-3-compare.png" 
+                src={getAssetPath('assets/decision-story-3-compare.png')} 
                 alt="Decision Story #3: Add Service Wireframe vs Final UI"
                 className="w-full h-auto object-contain rounded-xl select-none"
                 referrerPolicy="no-referrer"
@@ -592,7 +593,7 @@ export function ServotixProviderExperienceMockup() {
                 <span className="text-white font-medium">Add Customer Flow</span>
               </div>
               <img 
-                src="/assets/provider-add-customer.png" 
+                src={getAssetPath('assets/provider-add-customer.png')} 
                 alt="Servotix Provider Experience: Add Customer Screen"
                 className="w-full h-auto object-contain select-none"
                 referrerPolicy="no-referrer"
