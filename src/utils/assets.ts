@@ -19,10 +19,18 @@ export function getAssetPath(path: string): string {
     return path;
   }
 
-  // Normalize path by removing leading './' or '/'
-  const cleanPath = path.replace(/^\.?\//, '');
   const baseUrl = import.meta.env.BASE_URL || '/';
   const normalizedBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+
+  // If path already starts with the baseUrl, return it
+  if (path.startsWith(normalizedBase)) {
+    return path;
+  }
+
+  // Normalize path by stripping leading './', '/', or 'public/'
+  let cleanPath = path.trim();
+  cleanPath = cleanPath.replace(/^\.?\//, '');
+  cleanPath = cleanPath.replace(/^public\//, '');
 
   return `${normalizedBase}${cleanPath}`;
 }
